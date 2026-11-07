@@ -1,12 +1,52 @@
-FormaUI builds Forma, a Blazor component library for web, desktop, and mobile apps, and Nexo, an embeddable language for computing and shaping data. DOMQL uses Nexo to query and observe the DOM. Locali checks Forma’s localization, and Versioning defines how we release our projects.
+FormaUI is an umbrella project for open-source software. We believe people should be able to use applications in their own language, on the devices they use, and in the ways that work for them. Our tools make it easier for developers to build software that gives people those choices. Everything is free to use, with no gotchas.
 
-| Project | What it does | Get it |
-| --- | --- | --- |
-| [Forma](https://github.com/FormaUI/Forma) | Provides .NET 11 Blazor components for input, navigation, layout, dialogs, and working with files. The same components run in Blazor Web Apps, standalone WebAssembly apps, and Blazor Hybrid apps for WPF, Windows Forms, and .NET MAUI. Every component supports localization, left-to-right and right-to-left layouts, and theming through design tokens. | [Interactive Server](https://github.com/FormaUI/Forma#set-up-a-server-host) · [WebAssembly and Auto](https://github.com/FormaUI/Forma#webassembly-components) · [Blazor Hybrid](https://github.com/FormaUI/Forma#blazor-hybrid) |
-| [Nexo](https://github.com/FormaUI/Nexo) | The host application declares a typed vocabulary. Scripts use that vocabulary to compute and shape data. Nexo checks each script before it runs and returns plain, immutable data. | [`formaui-net.Nexo`](https://www.nuget.org/packages/formaui-net.Nexo) on NuGet and [`@formaui-net/nexo`](https://www.npmjs.com/package/@formaui-net/nexo) on npm |
-| [DOMQL](https://github.com/FormaUI/DOMQL) | A JavaScript library that runs queries written in Nexo against the DOM. Run a query once to read the document, or observe its result as the document changes. | [`formaui-net.DOMQL`](https://www.nuget.org/packages/formaui-net.DOMQL) on NuGet and [`@formaui-net/domql`](https://www.npmjs.com/package/@formaui-net/domql) on npm |
-| [Locali](https://github.com/FormaUI/Locali) | Checks Forma locale files and the C#, Visual Basic, and Razor code that reads them. It applies the same lookup rules as the runtime so you can catch localization errors before the application runs. | [`formaui-net.Locali`](https://www.nuget.org/packages/formaui-net.Locali), a .NET tool |
-| [Versioning](https://github.com/FormaUI/Versioning) | Defines the versioning, branching, commit, release, and packaging rules for every FormaUI project. Its GitHub Actions enforce those rules. | Pin its GitHub Actions to a release. |
+**Eyal Alon** — I’m the programmer behind FormaUI. I designed the architecture and made every technical decision, down to the smallest detail. I wrote and refined the code with Claude Code as my pair programmer.
+
+## [Forma](https://github.com/FormaUI/Forma)
+
+Forma is a .NET 11 Blazor component library for input, navigation, layout, dialogs, and working with files. The same components run in Blazor Web Apps, standalone WebAssembly apps, and Blazor Hybrid apps built with WPF, Windows Forms, or .NET MAUI. Every component supports localization, left-to-right and right-to-left layouts, and theming through design tokens.
+
+**Get it**
+
+- [Interactive Server](https://github.com/FormaUI/Forma#set-up-a-server-host)
+- [WebAssembly and Auto](https://github.com/FormaUI/Forma#webassembly-components)
+- [Blazor Hybrid](https://github.com/FormaUI/Forma#blazor-hybrid)
+
+## [Nexo](https://github.com/FormaUI/Nexo)
+
+Nexo is an embeddable language with no domain of its own. The host declares a typed vocabulary, and scripts use it to compute and shape data. Nexo checks each script against that vocabulary before it runs and returns plain, immutable data.
+
+**Get it**
+
+- [NuGet](https://www.nuget.org/packages/formaui-net.Nexo)
+- [npm](https://www.npmjs.com/package/@formaui-net/nexo)
+
+## [DOMQL](https://github.com/FormaUI/DOMQL)
+
+DOMQL is a JavaScript library for working with the DOM through queries written in Nexo. A query can read the document once or keep its result current as the document changes. Scripts can also subscribe to events and perform actions such as focusing an element, scrolling it into view, or opening a popover.
+
+**Get it**
+
+- [NuGet](https://www.nuget.org/packages/formaui-net.DOMQL)
+- [npm](https://www.npmjs.com/package/@formaui-net/domql)
+
+## [Locali](https://github.com/FormaUI/Locali)
+
+Locali is a .NET tool that checks Forma locale files and the C#, Visual Basic, and Razor code that reads them. It applies the same lookup rules as the runtime so you can catch localization errors before the application runs.
+
+**Get it**
+
+- [NuGet](https://www.nuget.org/packages/formaui-net.Locali)
+
+## [Versioning](https://github.com/FormaUI/Versioning)
+
+Versioning defines the versioning, branching, commit, release, and packaging rules for every FormaUI project. Its GitHub Actions enforce those rules.
+
+**Get it**
+
+- [GitHub releases](https://github.com/FormaUI/Versioning/releases)
+
+## Preview releases
 
 All projects are in preview. Releases use `1.0.0-preview.N`. A project’s contract can change between previews, and breaking changes come with migration notes.
 
