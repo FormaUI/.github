@@ -1,6 +1,6 @@
 FormaUI is an umbrella project for open-source software. We believe people should be able to use applications in their own language, on the devices they use, and in the ways that work for them. Our tools make it easier for developers to build software that gives people those choices. Everything is free to use, with no gotchas.
 
-**Eyal Alon** — I’m the programmer behind FormaUI. I designed the architecture and made every technical decision, down to the smallest detail. I wrote and refined the code with Claude Code as my pair programmer.
+**Eyal Alon** — I’m the programmer behind FormaUI. I designed the architecture and made every technical decision. I wrote and refined the code with Claude Code as my pair programmer. When I wanted a second perspective, I sometimes asked ChatGPT for a review.
 
 ## [Forma](https://github.com/FormaUI/Forma)
 
